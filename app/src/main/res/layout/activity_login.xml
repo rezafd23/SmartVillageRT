@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:id="@+id/rootlayout"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMART VILLAGE - RT"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            android:textColor="@color/basePressColor"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Everyone Connected"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/basePressColor"/>
+        <ImageView
+            android:layout_marginTop="80dp"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:src="@drawable/smartv"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:textColor="@color/basePressColor"
+        android:text="Don't Have an Account? Click Here"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_above="@+id/txtRegister"
+        android:layout_margin="16dp">
+        <Button
+            android:id="@+id/btnSignIn"
+            android:textColor="@color/basePressColor"
+            android:background="@drawable/btn_login_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:textSize="20dp"
+            android:text="SIGN IN"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

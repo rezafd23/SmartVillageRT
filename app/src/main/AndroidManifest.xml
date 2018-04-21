@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rezafd.smartvillagert">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/smartv"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/smartv"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="LoginActivity"
+            android:parentActivityName=".SplashScreen">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
+        </activity>
+        <activity
+            android:name=".ViewOtherProfile"
+            android:label="ViewOtherProfile"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ViewOtherProfile" />
+        </activity>
+        <activity
+            android:name=".ChangeProfile"
+            android:label="ChangeProfile"
+            android:parentActivityName=".SettingActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ChangeProfile" />
+        </activity>
+        <activity
+            android:name=".SettingActivity"
+            android:label="SettingActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SettingActivity" />
+        </activity>
+        <activity
+            android:name=".AspirasiActivity"
+            android:label="AspirasiActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AspirasiActivity" />
+        </activity>
+        <activity
+            android:name=".ViewMyAspirasi"
+            android:label="ViewMyAspirasi"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ViewMyAspirasi" />
+        </activity>
+        <activity
+            android:name=".DeleteAspirasi"
+            android:label="DeleteAspirasi"
+            android:parentActivityName=".ViewMyAspirasi">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ViewMyAspirasi" />
+        </activity>
+        <activity
+            android:name=".AspirasiRTActivity"
+            android:label="AspirasiRTActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AspirasiRTActivity" />
+        </activity>
+        <activity
+            android:name=".ProcessActivity"
+            android:label="ProcessActivity"
+            android:parentActivityName=".AspirasiRTActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProcessActivity" />
+        </activity>
+    </application>
+
+</manifest>

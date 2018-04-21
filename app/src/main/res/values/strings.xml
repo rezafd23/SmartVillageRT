@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SmartVillageRT</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="Setting">
+        <item>Change Profile</item>
+        <item>Sign Out</item>
+    </string-array>
+
+    <string-array name="spinner_privasi">
+        <item>Pilih Privasi</item>
+        <item>Private</item>
+        <item>Public</item>
+    </string-array>
+
+    <string-array name="spinner_kategori">
+        <item>Pilih Kategori Aspirasi</item>
+        <item>Warga</item>
+        <item>Pengumuman</item>
+        <item>Others</item>
+    </string-array>
+</resources>

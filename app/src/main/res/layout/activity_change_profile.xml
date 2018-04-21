@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeProfile">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_back"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.Dark.Dialog"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_back">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/toolbar_back"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:id="@+id/settinglayoutfoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/settingfoto"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/background"/>
+
+                <ImageView
+                    android:id="@+id/choosephoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/settingfoto"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@android:drawable/ic_menu_camera" />
+                <Button
+                    android:id="@+id/setphotos"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="SET Photos"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/btn_login_background"
+                    />
+
+            </RelativeLayout>
+            <!--Nama-->
+            <TextView
+                android:id="@+id/viewnama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settinglayoutfoto"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Nama" />
+
+            <EditText
+                android:id="@+id/settingnama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewnama"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+            <!--NoHP-->
+            <TextView
+                android:id="@+id/viewnohp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settingnama"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="No HP" />
+
+            <EditText
+                android:id="@+id/settingnohp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewnohp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+            <!--Email-->
+            <TextView
+                android:id="@+id/viewemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settingnohp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Email" />
+
+            <EditText
+                android:id="@+id/settingemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewemail"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <!--Alamat-->
+            <TextView
+                android:id="@+id/viewalamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settingemail"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Alamat" />
+
+            <EditText
+                android:id="@+id/settingalamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewalamat"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textMultiLine"
+                android:lines="3" />
+
+            <LinearLayout
+                android:id="@+id/rtrw"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settingalamat">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/viewrt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="RT" />
+                    <EditText
+                        android:id="@+id/settingrt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/viewrw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Rw" />
+                    <EditText
+                        android:id="@+id/settingrw"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Pekerjaan-->
+            <TextView
+                android:id="@+id/viewPekerjaan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rtrw"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Pekerjaan" />
+
+            <EditText
+                android:id="@+id/settingpekerjaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewPekerjaan"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <!--Password-->
+            <TextView
+                android:id="@+id/viewPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settingpekerjaan"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Password" />
+
+            <EditText
+                android:id="@+id/settingpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewPassword"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textPassword"/>
+            <Button
+                android:id="@+id/btnsavesetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settingpassword"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_login_background"
+                android:text="SAVE" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

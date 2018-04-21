@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/listphoto"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/smartv"
+            android:adjustViewBounds="true"/>
+        <TextView
+            android:id="@+id/listUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="#ffffff"
+            android:background="#96000000"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
