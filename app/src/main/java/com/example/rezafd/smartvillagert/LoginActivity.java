@@ -63,6 +63,24 @@ public class LoginActivity extends BaseActivity {
         });
     }
 
+    @Override
+    public void onBackPressed() {
+
+        new AlertDialog.Builder(this)
+                .setMessage("Apakah Anda yakin akan keluar?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        LoginActivity.this.finish();
+                    }
+                })
+                .setNegativeButton("No",null)
+                .show();
+
+//        super.onBackPressed();
+    }
+
     private void showregister(){
         AlertDialog.Builder dialog  = new AlertDialog.Builder(this);
         dialog.setTitle("REGISTER");

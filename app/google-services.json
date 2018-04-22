@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "130199837017-dd53cirhkv5rebb0kdfle6vkktsvf7td.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rezafd.smartvillagert",
+            "certificate_hash": "151a164fe36be19194bcd385ee690869235bcc8e"
+          }
+        },
+        {
           "client_id": "130199837017-qq7sls2discd8740blq4dcdl7ddial8e.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
